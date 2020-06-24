@@ -1,0 +1,26 @@
+<%- include('header');%>
+<div id="container">
+
+	<div id="intro-contact"><p class="intro-text">Me contacter !</p></div>
+
+	<div id="formulaire">
+		<form id="contactForm" name="contactForm" method="post">
+			<input type="text" id="email" name="email" placeholder="Votre adresse e-mail..." required>
+
+			<input type="subject" id="subject" name="subject" placeholder="Le sujet de votre message..." >
+
+			<textarea id="text" name="text" placeholder="Votre message..." ></textarea>
+
+			<div class="g-recaptcha" data-sitekey="6Ld3cAEVAAAAAGREV0RUjGaogekO3FtZRlDM-pRS"></div>
+			<p id="captcha-error"><%= checkCaptcha %></p>
+			
+			<input type="submit" id="contact-submit">
+
+		</form>
+	</div>
+		
+</div>
+
+
+
+<%- include('footer');%>
